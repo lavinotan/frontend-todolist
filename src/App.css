@@ -1,0 +1,165 @@
+body {
+  background-color: #20487c;
+  min-height: 70vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(198, 1%, 29%);
+  font-family: "Architects Daughter", cursive;
+  text-align: center;
+  font-size: 130%;
+}
+
+.listNoteWrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top {
+  color:#f1f5f8;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  max-width: 300px;
+  min-width: 250px;
+  background: #f1f5f8;
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 4px 3px 7px 2px #00000040;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.heading .listTitle {
+  transform: rotate(2deg);
+  padding: 0.5rem 0.5rem;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  background-color: #fdcb6e;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  min-width: 222px;
+  min-height: 30px;
+  color: hsl(198, 1%, 29%);
+  cursor: pointer;
+}
+
+.heading .listTitle:hover {
+  font-weight: bold;
+}
+
+.heading input {
+  transform: rotate(2deg);
+  padding: 0.5rem 0.5rem;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  background-color: #fdcb6e;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  color: hsl(198, 1%, 29%);
+}
+
+.heading button {
+  font-family: "Architects Daughter", cursive;
+  text-decoration: none;
+  padding: 0.2rem 0.6rem 0.3rem 0.6rem;
+  border-radius: 50%;
+  margin-top: -5rem;
+  margin-left: -3rem;
+  border: 1px solid hsl(210, 1%, 53%);
+  cursor: pointer;
+}
+
+.heading button:hover {
+  font-weight: bold;
+}
+
+#addListButton {
+  font-family: "Architects Daughter", cursive;
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 60px;
+  color:#f1f5f8;
+  padding-bottom: 6px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#addListButton:hover {
+  font-weight: bold;
+}
+
+.addList{
+  color:#f1f5f8;
+}
+
+.form input {
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 0.7rem;
+  border-bottom-right-radius: 15px 3px;
+  border-bottom-left-radius: 3px 15px;
+  border: solid 3px transparent;
+  border-bottom: dashed 3px #fdcb6e;
+  font-family: "Architects Daughter", cursive;
+  font-size: 1rem;
+  color: hsla(260, 2%, 25%, 0.7);
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.form button {
+  padding: 0;
+  border: none;
+  font-family: "Architects Daughter", cursive;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  background-color: #ffeaa7;
+  cursor: pointer;
+}
+
+.form button span {
+  background: #f1f5f8;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid hsl(198, 1%, 29%);
+}
+
+.form button span:hover{
+  border: 2.5px solid hsl(198, 1%, 29%);
+}
+
+li {
+  text-align: left;
+  position: relative;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+li:hover {
+  font-weight: bold;
+}
