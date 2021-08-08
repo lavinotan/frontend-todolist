@@ -163,3 +163,7 @@ li {
 li:hover {
   font-weight: bold;
 }
+
+.footer {
+  color: #f1f5f8;
+}

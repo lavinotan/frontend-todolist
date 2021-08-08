@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   getItemsFromAPI() {
-    fetch("http://localhost:4000/testAPI")
+    fetch("https://tranquil-ocean-84661.herokuapp.com/api")
       .then(res => res.json())
       //.then(res => console.log(res))
       .then(data => this.setState({ allLists: data }))
@@ -27,7 +27,7 @@ class App extends Component {
 
   addItem = (item) => {
     console.log("itemToAdd: " + item.listId);
-    fetch("http://localhost:4000/testAPI/add", {
+    fetch("https://tranquil-ocean-84661.herokuapp.com/api/add", {
       method: 'POST',
       body: JSON.stringify(item),
       headers: { 'content-type': 'application/json' }
@@ -38,7 +38,7 @@ class App extends Component {
 
   deleteItem = (itemName, listId) => {
     console.log("itemToDelete: " + itemName + ", listId: " + listId);
-    fetch("http://localhost:4000/testAPI/delete", {
+    fetch("https://tranquil-ocean-84661.herokuapp.com/api/delete", {
       method: 'POST',
       body: JSON.stringify({
         "itemName": itemName,
@@ -51,7 +51,7 @@ class App extends Component {
   }
 
   addList = _ => {
-    fetch("http://localhost:4000/testAPI/addList", {
+    fetch("https://tranquil-ocean-84661.herokuapp.com/api/addList", {
       method: 'POST',
       body: JSON.stringify({
         "listName": "",
@@ -65,7 +65,7 @@ class App extends Component {
 
   removeList = (id) => {
     console.log("listToRemove id: " + id);
-    fetch("http://localhost:4000/testAPI/removeList", {
+    fetch("https://tranquil-ocean-84661.herokuapp.com/api/removeList", {
       method: 'POST',
       body: JSON.stringify({
         "id": id
@@ -78,7 +78,7 @@ class App extends Component {
 
   updateListName = (list, id) => {
     console.log("updatedList: " + list + " listId: " + id);
-    fetch("http://localhost:4000/testAPI/updateList", {
+    fetch("https://tranquil-ocean-84661.herokuapp.com/api/updateList", {
       method: 'POST',
       body: JSON.stringify({
         "listId": id,
@@ -119,6 +119,10 @@ class App extends Component {
               <button id="addListButton" onClick={() => { this.addList() }}>+</button>
             </div>
           </div>
+        </div>
+
+        <div className="footer">
+          <p>&copy; by Lavino Tân</p>
         </div>
       </div>
 
