@@ -21,7 +21,7 @@ class InputArea extends Component {
         const { inputItem } = this.state;
         return (
             <div className="form">
-                <form onSubmit={() => { this.props.onAdd(inputItem) }}>
+                <form onSubmit={(e) => { this.props.onAdd(e, inputItem) }}>
                     <input
                         type="text"
                         value={inputItem.itemName}

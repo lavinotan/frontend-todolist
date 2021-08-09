@@ -26,7 +26,8 @@ class App extends Component {
       .catch(err => console.error(err))
   }
 
-  addItem = (item) => {
+  addItem = (e, item) => {
+    e.preventDefault();
     console.log("itemToAdd: " + item.listId);
     fetch("https://tranquil-ocean-84661.herokuapp.com/api/add", {
       method: 'POST',
