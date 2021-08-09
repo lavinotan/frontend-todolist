@@ -2,7 +2,7 @@ import './App.css';
 import React, { Component } from 'react';
 import ToDoList from './components/ToDoList';
 
-const timeDelay = 100;
+const timeDelay = 50;
 
 class App extends Component {
   constructor(props) {
@@ -13,8 +13,6 @@ class App extends Component {
 
     this.addList = this.addList.bind(this);
   }
-
-
 
   componentDidMount() {
     this.getItemsFromAPI();
