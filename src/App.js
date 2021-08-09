@@ -92,7 +92,7 @@ class App extends Component {
   }
 
   updateListName = (list, id) => {
-    console.log("updatedList: " + list + " listId: " + id);
+    console.log("updatedList: " + list + ", listId: " + id);
     fetch("https://tranquil-ocean-84661.herokuapp.com/api/updateList", {
       method: 'POST',
       body: JSON.stringify({
