@@ -16,6 +16,7 @@ class TitleArea extends Component {
                     <div
                         className="listTitle"
                         onDoubleClick={this.props.listNameDoubleClick}
+                        title="Double click to edit"
                     >
                         {this.props.title}
                     </div>

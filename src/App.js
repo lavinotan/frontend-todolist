@@ -133,7 +133,10 @@ class App extends Component {
 
             <div className="addList">
               {allLists.length === 0 ? <h1>Add List</h1> : ""}
-              <button id="addListButton" onClick={() => { this.addList() }}>+</button>
+              <button
+                id="addListButton"
+                onClick={() => { this.addList() }}
+                title="Click to add list">+</button>
             </div>
           </div>
         </div>
