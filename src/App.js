@@ -34,7 +34,7 @@ class App extends Component {
     fetch("https://tranquil-ocean-84661.herokuapp.com/api/add", {
       method: 'POST',
       body: JSON.stringify(item),
-      headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*', 'credentials': 'include' }
+      headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*' }
     })
       .then(this.getItemsFromAPI())
       .catch(err => console.error(err))
@@ -48,7 +48,7 @@ class App extends Component {
         "itemName": itemName,
         "listId": listId
       }),
-      headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*', 'credentials': 'include' }
+      headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*' }
     })
       .then(this.getItemsFromAPI())
       .catch(err => console.error(err))
@@ -61,7 +61,7 @@ class App extends Component {
         "listName": "",
         "items": []
       }),
-      headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*', 'credentials': 'include' }
+      headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*' }
     })
       .then(this.getItemsFromAPI())
       .catch(err => console.error(err))
@@ -74,7 +74,7 @@ class App extends Component {
       body: JSON.stringify({
         "id": id
       }),
-      headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*', 'credentials': 'include' }
+      headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*' }
     })
       .then(this.getItemsFromAPI())
       .catch(err => console.error(err))
@@ -88,7 +88,7 @@ class App extends Component {
         "listId": id,
         "listName": list
       }),
-      headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*', 'credentials': 'include' }
+      headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*' }
     })
       .then(this.getItemsFromAPI())
       .catch(err => console.error(err))
