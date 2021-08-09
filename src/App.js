@@ -55,6 +55,7 @@ class App extends Component {
   }
 
   addList = _ => {
+    console.log("addList called");
     fetch("https://tranquil-ocean-84661.herokuapp.com/api/addList", {
       method: 'POST',
       body: JSON.stringify({
