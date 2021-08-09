@@ -13,6 +13,10 @@ class App extends Component {
     this.addList = this.addList.bind(this);
   }
 
+  componentDidMount() {
+    this.getItemsFromAPI();
+  }
+
   componentWillMount() {
     this.getItemsFromAPI();
   }
