@@ -21,18 +21,19 @@ class InputArea extends Component {
         const { inputItem } = this.state;
         return (
             <div className="form">
-                <input
-                    type="text"
-                    value={inputItem.itemName}
-                    onChange={this.handleInputChange}
-                    placeholder="Enter list here"
-                />
-                <button
-                    onClick={() => {
-                        this.props.onAdd(inputItem);
-                    }}>
-                    <span>Add</span>
-                </button>
+                <form onSubmit={() => { this.props.onAdd(inputItem) }}>
+                    <input
+                        type="text"
+                        value={inputItem.itemName}
+                        onChange={this.handleInputChange}
+                        placeholder="Enter list here"
+                    />
+                    <button
+                        type="submit"
+                    >
+                        <span>Add</span>
+                    </button>
+                </form>
             </div>
         );
 
