@@ -115,7 +115,7 @@ class App extends Component {
     return (
       <div>
         <div className="top">
-          <h1>List Note of Life</h1>
+          <h1>Notes & To-do-list</h1>
         </div>
 
         <div className="main">
