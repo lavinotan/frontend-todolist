@@ -64,7 +64,10 @@ class App extends Component {
       }),
       headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*' }
     })
-      .then(this.getItemsFromAPI())
+      .then(() => {
+        const timer = setTimeout(() => this.getItemsFromAPI(), 500);
+        return () => clearTimeout(timer);
+      })
       .catch(err => console.error(err))
   }
 
