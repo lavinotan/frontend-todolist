@@ -1,7 +1,8 @@
 import './App.css';
 import React, { Component } from 'react';
-
 import ToDoList from './components/ToDoList';
+
+const timeDelay = 200;
 
 class App extends Component {
   constructor(props) {
@@ -12,6 +13,8 @@ class App extends Component {
 
     this.addList = this.addList.bind(this);
   }
+
+
 
   componentDidMount() {
     this.getItemsFromAPI();
@@ -33,7 +36,7 @@ class App extends Component {
       headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*' }
     })
       .then(() => {
-        const timer = setTimeout(() => this.getItemsFromAPI(), 300);
+        const timer = setTimeout(() => this.getItemsFromAPI(), timeDelay);
         return () => clearTimeout(timer);
       })
       .catch(err => console.error(err))
@@ -50,7 +53,7 @@ class App extends Component {
       headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*' }
     })
       .then(() => {
-        const timer = setTimeout(() => this.getItemsFromAPI(), 300);
+        const timer = setTimeout(() => this.getItemsFromAPI(), timeDelay);
         return () => clearTimeout(timer);
       })
       .catch(err => console.error(err))
@@ -67,7 +70,7 @@ class App extends Component {
       headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*' }
     })
       .then(() => {
-        const timer = setTimeout(() => this.getItemsFromAPI(), 300);
+        const timer = setTimeout(() => this.getItemsFromAPI(), timeDelay);
         return () => clearTimeout(timer);
       })
       .catch(err => console.error(err))
@@ -83,7 +86,7 @@ class App extends Component {
       headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*' }
     })
       .then(() => {
-        const timer = setTimeout(() => this.getItemsFromAPI(), 300);
+        const timer = setTimeout(() => this.getItemsFromAPI(), timeDelay);
         return () => clearTimeout(timer);
       })
       .catch(err => console.error(err))
@@ -99,7 +102,10 @@ class App extends Component {
       }),
       headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*' }
     })
-      .then(this.getItemsFromAPI())
+      .then(() => {
+        const timer = setTimeout(() => this.getItemsFromAPI(), timeDelay);
+        return () => clearTimeout(timer);
+      })
       .catch(err => console.error(err))
   }
 
