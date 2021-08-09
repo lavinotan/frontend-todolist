@@ -2,7 +2,7 @@ import './App.css';
 import React, { Component } from 'react';
 import ToDoList from './components/ToDoList';
 
-const timeDelay = 50;
+const timeDelay = 10;
 
 class App extends Component {
   constructor(props) {
