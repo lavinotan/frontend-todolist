@@ -74,7 +74,7 @@ class App extends Component {
       body: JSON.stringify({
         "id": id
       }),
-      headers: { 'content-type': 'application/json' }
+      headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*' }
     })
       .then(this.getItemsFromAPI())
       .catch(err => console.error(err))
