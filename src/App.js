@@ -17,10 +17,6 @@ class App extends Component {
     this.getItemsFromAPI();
   }
 
-  componentWillMount() {
-    this.getItemsFromAPI();
-  }
-
   getItemsFromAPI() {
     fetch("https://tranquil-ocean-84661.herokuapp.com/api")
       .then(res => res.json())
@@ -36,7 +32,10 @@ class App extends Component {
       body: JSON.stringify(item),
       headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*' }
     })
-      .then(this.getItemsFromAPI())
+      .then(() => {
+        const timer = setTimeout(() => this.getItemsFromAPI(), 300);
+        return () => clearTimeout(timer);
+      })
       .catch(err => console.error(err))
   }
 
@@ -50,7 +49,10 @@ class App extends Component {
       }),
       headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*' }
     })
-      .then(this.getItemsFromAPI())
+      .then(() => {
+        const timer = setTimeout(() => this.getItemsFromAPI(), 300);
+        return () => clearTimeout(timer);
+      })
       .catch(err => console.error(err))
   }
 
@@ -65,7 +67,7 @@ class App extends Component {
       headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*' }
     })
       .then(() => {
-        const timer = setTimeout(() => this.getItemsFromAPI(), 500);
+        const timer = setTimeout(() => this.getItemsFromAPI(), 300);
         return () => clearTimeout(timer);
       })
       .catch(err => console.error(err))
@@ -80,7 +82,10 @@ class App extends Component {
       }),
       headers: { 'content-type': 'application/json', 'Access-Control-Allow-Origin': '*' }
     })
-      .then(this.getItemsFromAPI())
+      .then(() => {
+        const timer = setTimeout(() => this.getItemsFromAPI(), 300);
+        return () => clearTimeout(timer);
+      })
       .catch(err => console.error(err))
   }
 
