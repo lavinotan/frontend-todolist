@@ -55,7 +55,7 @@ class App extends Component {
     fetch("https://tranquil-ocean-84661.herokuapp.com/api", {
       headers: {
         Authorization: token,
-        'Access-Control-Allow-Origin': *
+        'Access-Control-Allow-Origin': '*'
       }
     })
       .then(res => res.json())
