@@ -2,14 +2,12 @@ import './App.css';
 import React, { Component } from 'react';
 import ToDoList from './components/ToDoList';
 import Login from './components/auth/Login';
-import Logout from './components/auth/Logout';
 import Menu from './components/Menu';
 
-import { getAuth, signInWithPopup, onAuthStateChanged, GoogleAuthProvider, signOut } from 'firebase/auth';
+import { getAuth, onAuthStateChanged, GoogleAuthProvider, signOut } from 'firebase/auth';
 
 const timeDelay = 10;
 const auth = getAuth();
-const provider = new GoogleAuthProvider();
 
 class App extends Component {
   constructor(props) {
