@@ -23,6 +23,7 @@ class Login extends Component {
     }).catch((error) => {
         console.log(error.message);
         console.log(error.code);
+        console.log(error);
     });
 
     signInWithGitHub = () => signInWithPopup(auth, githubProvider).then((result) => {
