@@ -4,7 +4,7 @@ import ToDoList from './components/ToDoList';
 import Login from './components/auth/Login';
 import Menu from './components/Menu';
 
-import { getAuth, onAuthStateChanged, GoogleAuthProvider, signOut } from 'firebase/auth';
+import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
 
 const timeDelay = 10;
 const auth = getAuth();
@@ -160,7 +160,7 @@ class App extends Component {
 
   render() {
 
-    const { allLists, isSignedIn, token, userName } = this.state;
+    const { allLists, isSignedIn, userName } = this.state;
 
     return (
       <div>
