@@ -1,5 +1,5 @@
-# Dynamic To-Do-List (Frontend React)
-A simple demonstration on Full-Stack Web App of dynamic to-do-list (REST API), built from scratch with Express/Node.js, React, Google Firebase, and Heroku. This is the frontend coding part.
+# Dynamic To-Do-List with Authentication Sign-in (Frontend React)
+A simple demonstration on Full-Stack Web App of dynamic to-do-list (REST API), built from scratch with Express/Node.js, React, Google Firebase (with Authentication), and Heroku. This is the frontend coding part.
 
 ## Instructions
 Website link: [https://fullstack-todolist.netlify.app/](https://fullstack-todolist.netlify.app/)
@@ -11,7 +11,7 @@ Website link: [https://fullstack-todolist.netlify.app/](https://fullstack-todoli
 ## Requirements & Technologies
 * React Component in practice - dynamic to-do-list Web App.
 * Demonstration of server management by Express and Node.js.
-* Database implementation of Google Firebase - Cloude Firestore.
+* Database implementation of Google Firebase - Cloude Firestore and Authentication Sign-in.
 * Application of REST API and CRUD operations.
 * Delpoyment of the web app with Heroku.
 
