@@ -16,7 +16,7 @@ Website link: [https://fullstack-todolist.netlify.app/](https://fullstack-todoli
 * Delpoyment of the web app with Heroku.
 
 ## Backend (server) Code
-View the App backend code: [https://github.com/lavinotan/backend-todolist-by-node-express](https://github.com/lavinotan/backend-todolist-by-node-express)
+View the App backend code: [https://github.com/lavinotan/backend-todolist-by-node-express](https://github.com/lavinotan/backend-todolist-by-node-express-firebase)
 
 ## Miscellaneous
 All rights reserved to the author.
